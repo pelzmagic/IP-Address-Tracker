@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP address tracker</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="hero">
+      <p class="title">IP Address Tracker</p>
+      <div class="user_input">
+        <input type="text" placeholder="Search for any IP address or domain" class="input_text" />
+        <button class="searchbtn"><img src="./images/icon-arrow.svg" alt="an arrow for direction" /></button>
+      </div>
+      <div class="address_details">
+        <div class="first_detail">
+          <p class="head">IP ADDRESS</p>
+          <p class="content">192.212.174.101</p>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="second_detail">
+          <p class="head">LOCATION</p>
+          <p class="content">Brooklyn,NY 10001</p>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="third_detail">
+          <p class="head">TIMEZONE</p>
+          <p class="content">UTC -05:00</p>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="fourth_detail">
+          <p class="head">ISP</p>
+          <p class="content">SpaceX Starlink</p>
+        </div>
+      </div>
+      <section id="map"></section>
+    </div>
+    <img src="./images/icon-location.svg" class="location" />
+  </body>
+</html>
